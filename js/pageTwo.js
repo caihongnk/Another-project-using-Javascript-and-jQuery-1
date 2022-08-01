@@ -1,0 +1,187 @@
+
+var arrangeTable = {};
+
+arrangeTable.sep = [
+
+	['Mon.','Sep.3','<img src="img/noVacan.png" alt="no vacancy"/>','<b>Available:</b><br><a href="#">6</a>'],
+	['Tues.','Sep.4','<b>Available:</b><br><a href="#">7</a>','<img src="img/noVacan.png" alt="no vacancy"/>'],
+	['Wed.','Sep.5','<b>Available:</b><br><a href="#">6</a>','<img src="img/noVacan.png" alt="no vacancy"/>'],
+     ['Thur.','Sep.6','<b>Available:</b><br><a href="#">5</a>','<b>Available:</b><br><a href="#">2</a>'],
+     ['Fri.','Sep.7','<b>Available:</b><br><a href="#">5</a>','<img src="img/noVacan.png" alt="no vacancy"/>'],
+     ['Sat.','Sep.8','<b>Available:</b><br><a href="#">4</a>','<img src="img/noVacan.png" alt="no vacancy"/>'],            
+     ['Sun.','Sep.9','<b>Available:</b><br><a href="#">2</a>','<b>Available:</b><br><a href="#">1</a>'],
+
+     ['Mon.','Sep.10','<img src="img/noVacan.png"/>','<b>Available:</b><br><a href="#">6</a>'],
+	['Tues.','Sep.11','<b>Available:</b><br><a href="#">2</a>','<img src="img/noVacan.png" alt="no vacancy"/>'],
+	['Wed.','Sep.12','<b>Available:</b><br><a href="#">6</a>','<b>Available:</b><br><a href="#">3</a>'],
+     ['Thur.','Sep.13','<img src="img/noVacan.png"/>','<img src="img/noVacan.png" alt="no vacancy"/>'],
+     ['Fri.','Sep.14','<b>Available:</b><br><a href="#">3</a>','<b>Available:</b><br><a href="#">1</a>'],
+     ['Sat.','Sep.15','<b>Available:</b><br><a href="#">8</a>','<img src="img/noVacan.png" alt="no vacancy"/>'],            
+     ['Sun.','Sep.16','<img src="img/noVacan.png"/>','<img src="img/noVacan.png"/>'],
+
+     ['Mon.','Sep.17','<img src="img/noVacan.png"/>','<b>Available:</b><br><a href="#">2</a>'],
+	['Tues.','Sep.18','<b>Available:</b><br><a href="#">2</a>','<b>Available:</b><br><a href="#">1</a>'],
+	['Wed.','Sep.19','<img src="img/noVacan.png"/>','<img src="img/noVacan.png" alt="no vacancy"/>'],
+     ['Thur.','Sep.20','<b>Available:</b><br><a href="#">5</a>','<b>Available:</b><br><a href="#">2</a>'],
+     ['Fri.','Sep.21','<b>Available:</b><br><a href="#">2</a>','<img src="img/noVacan.png" alt="no vacancy"/>'],
+     ['Sat.','Sep.22','<b>Available:</b><br><a href="#">7</a>','<img src="img/noVacan.png" alt="no vacancy"/>'],            
+     ['Sun.','Sep.23','<b>Available:</b><br><a href="#">7</a>','<img src="img/noVacan.png"/>'],
+
+     ['Mon.','Sep.24','<img src="img/noVacan.png"/>','<b>Available:</b><br><a href="#">2</a>'],
+	['Tues.','Sep.25','<img src="img/noVacan.png"/>','<img src="img/noVacan.png" alt="no vacancy"/>'],
+	['Wed.','Sep.26','<b>Available:</b><br><a href="#">4</a>','<img src="img/noVacan.png" alt="no vacancy"/>'],
+     ['Thur.','Sep.27','<b>Available:</b><br><a href="#">1</a>','<img src="img/noVacan.png"/>'],
+     ['Fri.','Sep.28','<b>Available:</b><br><a href="#">1</a>','<b>Available:</b><br><a href="#">2</a>'],
+     ['Sat.','Sep.29','<img src="img/noVacan.png"/>','<img src="img/noVacan.png" alt="no vacancy"/>'],            
+     ['Sun.','Sep.30','<b>Available:</b><br><a href="#">2</a>','<b>Available:</b><br><a href="#">4</a>'],
+	
+];
+
+
+//--------------------------
+$(window).on("click",function(){
+      return false;
+})
+
+//--------------------------
+
+//console.log("arrangeTable.sep.slice(0,7).length"+ arrangeTable.sep.slice(0,7).length )
+
+var len=arrangeTable.sep.slice(0,7).length;
+var slider=$('.arrange-table .table .row1 .slider-wrap .slider');
+  
+
+//-------------------------------------------------------------形成一个有28列的Table-----------------
+for(var i=0;i<21; i++){
+$('.arrange-table .table #row1').append('<td><b></b><br><p></p></td>');
+$('.arrange-table .table #row2').append('<td></td>');
+$('.arrange-table .table #row3').append('<td></td>');
+}
+slider.css("width","2604");
+//-------------------------------------------------------------形成一个有28列的Table-------------------
+
+
+for(var i=0; i<7;i++){
+
+$('.arrange-table .slider #row1 td').eq(i).find('b').text( arrangeTable.sep[i][0]);
+$('.arrange-table .slider #row1 td').eq(i).find('p').text( arrangeTable.sep[i][1] );
+
+$('.arrange-table .slider #row2 td').eq(i).html( arrangeTable.sep[i][2] );
+$('.arrange-table .slider #row3 td').eq(i).html(arrangeTable.sep[i][3] );
+}
+
+for(var i=7; i<14;i++){
+
+$('.arrange-table .slider #row1 td').eq(i).find('b').text( arrangeTable.sep[i][0]);
+$('.arrange-table .slider #row1 td').eq(i).find('p').text( arrangeTable.sep[i][1] );
+
+$('.arrange-table .slider #row2 td').eq(i).html( arrangeTable.sep[i][2] );
+$('.arrange-table .slider #row3 td').eq(i).html(arrangeTable.sep[i][3] );
+}
+
+for(var i=14; i<21;i++){
+
+$('.arrange-table .slider #row1 td').eq(i).find('b').text( arrangeTable.sep[i][0]);
+$('.arrange-table .slider #row1 td').eq(i).find('p').text( arrangeTable.sep[i][1] );
+
+$('.arrange-table .slider #row2 td').eq(i).html( arrangeTable.sep[i][2] );
+$('.arrange-table .slider #row3 td').eq(i).html( arrangeTable.sep[i][3] );
+}
+
+for(var i=21; i<28;i++){
+
+$('.arrange-table .slider #row1 td').eq(i).find('b').text( arrangeTable.sep[i][0]);
+$('.arrange-table .slider #row1 td').eq(i).find('p').text( arrangeTable.sep[i][1] );
+
+$('.arrange-table .slider #row2 td').eq(i).html( arrangeTable.sep[i][2] );
+$('.arrange-table .slider #row3 td').eq(i).html( arrangeTable.sep[i][3] );
+}
+
+
+
+$('.arrange-table .table .last, .arrange-table .table .next').
+                 on("click",function(){
+                              
+                 })
+
+//------------------------------------------点击next  last 按钮的特效---------------------------------------------------------------
+var left=slider.css("left");
+    left=parseInt(left,10);
+var clicktag1 = 0;
+$('.arrange-table .table .next').
+              on("click",function(){
+                              if (clicktag1 == 0){
+                                    
+                                    clicktag1 = 1;
+                              
+                                    
+                                    console.log(left)
+                                    
+                                    
+                                    if(left<0){
+                                          left=left+651;  
+                                          slider.css({ "left":left,"transition":"all 1s"});
+                                    }else{
+                                    return false;
+                                    }
+                                                      
+                                    setTimeout(function () { clicktag1 = 0 }, 1000);
+                                    clicktag2 = 0;    
+                        }                   
+              })
+var clicktag2 = 0; 
+$('.arrange-table .table .last').
+              on("click",function(){
+                              if (clicktag2 == 0){
+                                                
+                                    clicktag2 = 1;
+                                                           
+                                    if(left>-1950){
+                                          left=left-651;  
+                                          slider.css({ "left":left,"transition":"all 1s"});
+                                    }else{
+                                    return false;
+                                    }
+                                                      
+                                    setTimeout(function () { clicktag2 = 0 }, 1000);
+                                    clicktag1 = 0;    
+                        }   
+              })
+
+
+
+function nextBtn(){
+                                     
+                  var left=parseInt( slider.css("left"),10 );  
+                  left=left+651; 
+                  slider.css({"left":left,"transition": "all 1s " })
+               
+                if(left>=0){
+                       
+                       return false;
+                }     
+                console.log(left)
+}
+
+function lastBtn(){
+                  var left=parseInt( slider.css("left"),10 );  
+                  left=left-651; 
+                  slider.css({"left":left,"transition": "all 1s " })
+               
+               if(left<-1400){
+                    
+                    return false;
+               }
+               console.log(left)
+}
+
+
+//-------------------------------------------------------------
+
+//------------------------------传入在数据库的index后,替换页面原有的内容-的函数(使用了前端模板)-----------------------------
+                              function getDataByIndex(index){                      //经典!!!!!!!!!!!!很容易犯的错误,我自己改正了
+                                                  
+                              }//getDataByIndex函数结束
+
+//
+//------------------------------传入在数据库的index后,替换页面原有的内容-的函数(使用了前端模板)------------------------------    

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/ui.css">
+	<link rel="stylesheet" type="text/css" href="./font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/Pc-signIn.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/pageTwo.css">
+	<script type="text/javascript" src="js/menu-detail.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/restaurant.js"></script>
+    <script type="text/javascript" src="js/pageTwo.js"></script> 
+</head>
+<body>
+    <div class="mask"></div>
+	<div id="top" class="top">
+			<div class="wrap">
+				<ul  class="call">
+				</ul>
+				<p class="welcome"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" class="login">Login</a>&nbsp;&nbsp;&nbsp;</p>
+	
+			</div>
+	</div>
+
+	<div id="header" class="header">
+		<div class="wrap">
+			<a href="#" class="logo"><img src="img/logo.png"></a>
+			<div class="search ui-search">
+				<div class="ui-search-selected">Select</div>
+				<div class="ui-search-select-list">
+					<a href="#">SelectA</a>
+					<a href="#">SelectB</a>
+					<a href="#">SelectC</a>
+				</div>
+				<input type="text" name="search-content" class="ui-search-input" placeholder="Enter search content">
+				<a href="#" class="ui-search-submit"&nbs>&nbsp;</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="nav" class="nav">
+		<div class="wrap">
+
+			<a href="javascript:void(0);" onclick="window.location.href='index.html'" target="_blank" class="link">Home</a>
+			<a href="javascript:void(0);" onclick="window.location.href='pageOne.html'" target="_blank" class="link">Book Now</a>
+			
+		</div>
+	</div>
+
+
+
+
+	<div id="details" class="details">
+		<div class="wrap">
+			<div class="caption">
+				Restaurant 
+				<span class="type"><b>Type:</b></span>
+				<span class="district"><b>District:</b></span>
+				<span class="level"></span>
+            </div>
+                                      
+            <div class="item">
+		            <div class="cover"><img src="" alt="a" /></div>
+					<div class="details">	
+					<div class="time">Open: </div>
+					<div class="phone">Phone：</div>
+					<div class="web"><a href="#"></a></div>
+					<div class="address">Address: </div>
+		    </div>
+
+					<div class="map"><img src="img/map.jpg" alt="map" /></div>
+                                         </div>                     
+		</div>
+	</div><!--details-->
+
+<script type="text/template" id="template_pageTwo">     
+            <div class="caption">
+               <b> Restaurant: {name} </b>
+                <span class="type"><b>Type: </b>{type}</span>
+                <span class="district"><b>District: </b>{area}</span>
+                <span class="level">{level}</span>
+             </div>
+                                      
+                                         <div class="item">
+                                              <div class="cover"><img src="{imgUrl}" alt="a" /></div>
+
+                    <div class="details">   
+                    <div class="time">Open: {time}</div>
+                    <div class="phone">Phone：{phone}</div>
+                    <div class="web"><a href="#">{web}</a></div>
+                    <div class="address">Address: {address}</div>
+                    </div>
+
+                    <div class="map"><img src="img/map.jpg" alt="map" /></div>
+                    </div>                   
+</script>
+
+
+
+	<div class="arrange-table">
+		<div class="wrap">
+			<b>Arrangements Table</b>
+			<div class="table">
+                                                     <table>
+                                                     	<tr class="row1" height="49px">
+                                                     		<td width=" 35px" class="last"></td>
+                                                     		<td rowspan="2" class="slider-wrap" id="slider-wrap">                    <!----slider-->
+                                                     			<div>
+                                                     				<table class="slider">        <!----三行7列-->
+                                                     					<tr class="row1"  id="row1" height="49px" >
+                                                     						<td>    <b></b><br>
+                                                     						            <p></p>
+                                                     						</td>
+                                                     						<td>
+                                                     							<b></b><br>
+                                                     							<p></p>
+                                                     						</td>
+                                                     						<td>
+                                                     							<b></b><br>
+                                                     							<p></p>
+                                                     						</td>
+                                                     						<td>
+                                                     							<b></b><br>
+                                                     							<p></p>
+                                                     						</td>
+                                                     						<td>
+                                                     							<b></b><br>
+                                                     							<p></p>
+                                                     						</td>
+                                                     						<td> 
+                                                     							<b></b><br>
+                                                     							<p></p>
+                                                     						</td>
+                                                     						<td>
+                                                     							<b></b><br>
+                                                     							<p></p>
+                                                     						</td>
+
+
+                                                     				
+                                                     					</tr>
+
+                                                     					<tr class="row2" id="row2"  height="161.5px" width=" ">
+                                                     					          <td></td>
+                                                     					          <td></td>
+                                                     						<td></td>
+                                                     						<td></td>
+                                                     						<td></td>
+                                                     						<td></td>
+                                                     						<td></td>
+
+                                                     					</tr>
+
+                                                     					<tr class="row3"  id="row3" height="161.5px" width=" ">
+                                                     					           <td></td>
+                                                     						<td></td>
+                                                     						<td></td>
+                                                     						<td></td>
+                                                     						<td></td>
+                                                     						<td></td>
+                                                     						<td></td>                                                   				
+                                                     					</tr>
+                                                     				</table>
+
+                                                     			
+                                                     		</td>
+                                                     		<td width="35px" class="next"></td>
+                                                     		<td rowspan="2" width="269px" class="tableInfo">
+                                                                             <div>
+                                                                                 <h3>Rules of Arrangements</h3>
+                                                                                     <p> It’s important to know a restaurant’s policy before you try to book a table.</p>
+                                                                                     <p>Once you’ve chosen a restaurant, figure out how many people are going to go to dinner with you</p>
+                                                                                     <p>
+                                                                                         You should always have a backup date and time in case there is no availability at the original time you chose
+                                                                                     </p>
+                                                                                     <p>However, if you are planning the dinner ahead of time, call earlier</p>
+                                                                                     <p>Be confident but polite; avoid giving the impression that you feel entitled to a reservation.</p>
+                                                                                     <p>If you book your table a week or more in advance, it's sometimes good to call the day of your reservation just to double-check that you still have it. </p>
+                                                                                     <p>Call ahead or cancel if you are running late Once you've secured your reservation, call ahead and apologize if it looks like you'll be up to 20 minutes late</p>
+                                                                             </div>
+                                                                </td>
+                                                     	</tr>
+
+                                                        <script type="text/javascript">
+                                                        var w=$('.arrange-table .table .row1 .tableInfo')[0].clientWidth;
+                                                        var h=$('.arrange-table .table .row1 .tableInfo')[0].clientHeight;
+                                                        
+                                                        
+                                                        </script>
+
+                                                     	<tr class="row2">
+                                                     		<td bgcolor="#00A2E8" >
+                                                     			<div style="color:white; font-weight:bold">a.m.</div>
+                                                     			
+                                                     			<div style="color:white; font-weight:bold">p.m.</div>
+                                                     		</td>
+                                                     		<td bgcolor="#00A2E8"></td	
+                                                     	</tr>
+
+                                                     	<tr class="row3" >
+                                                     		<td colspan="4" ><img src="img/icon-info.jpg">&nbsp;&nbsp;Please Select a Date.</td>
+                                                     	</tr>
+
+                                                     </table>
+				
+			</div><!--table-->
+
+			<script type="text/javascript">
+                                         var h=document.getElementById("slider-wrap").clientWidth;
+                                         
+			</script>
+		</div>
+	</div>
+
+	<div id="footer" class="footer">
+		copyright &copy present
+	</div>
+
+  <!---------------登录框---------------->
+
+          <div id="app">
+          	       <div class="boxx">
+				   <div class="close" ><a href="#" style="font-size:44px">×</a></div>
+          	       	<div class="bannerLogo">
+          	       		<img src="./img/logo.png">
+          	       	</div>
+                          
+                           <div class="caption">
+                           	<div class="focus">Login</div>
+                           	<div>Register</div>
+                           </div>
+
+                          <div class="account">
+                          	<form>                      
+                           	  <div class="item">
+                           	  	<i class="fa fa-envelope-open fa-lg"></i><input type="text"  placeholder="Email Address">
+                           	  </div>
+                           	  <div class="item">
+                           	  	<i class="fa fa-unlock-alt fa-lg"></i><input type="password"  placeholder="&nbsp;&nbsp;Password"> 
+                           	  </div>
+                           	  <div class="item" id="EnterAgain">
+                           	  	<i class="fa fa-unlock-alt fa-lg"></i><input type="password"  placeholder="&nbsp;&nbsp;Enter Password Again"> 
+                           	  </div>                    
+                          	</form>
+
+                          	<div class="select">
+                          		<div><input type="checkbox" onclick="checkAll(this)" name="checkboxall" >&nbsp;Remember Me</div>
+                          		<div><a href="#">Forgot Password?</a></div>
+                          	</div>
+
+                                       <div class="confirm">
+                                                    <div><div class="circle"><input type="checkbox" onclick="checkAll(this)" ></div></div>
+                                                    <div>I have read and agreed to the <a href="#">Terms and Conditions</a>.I also agree for my personal information to be collected, processed and transferred in accordance with the terms of the<a href="#">Privacy Policy</a>.</div>
+                          	</div>
+
+                          	<div class="login" id="submit">
+                          		<input  type="submit" value="Login In">
+                          	</div>
+
+                           	<div class="otherLogin" id="otherLogin">
+                          		<div class="caption"><div style="border: 0.5px solid lightgray;width:0.18rem;height:0"></div>&nbsp;&nbsp;or login using&nbsp;&nbsp;<div style="border: 0.5px solid lightgray;width:0.18rem;height:0"></div></div>
+                          		<div class="item">
+                      			<div class="facebook"><a href="#"><img src="./img/facebook.png"></a></div>
+                      			<div class="google"><a href="#"><img src="./img/google.png"></a></div>
+                      			<div class="twitter"><a href="#"><img src="./img/twitter.png"></a></div>
+                      	 		<div class="more" id="more"><a href="#"><img src="./img/threeDots.png"></a></a></div>
+                          		</div>
+			             <div class="item add">
+				<div class="Instagram"><a href="#"><img src="./img/Instagram.png"></a></div>
+				<div class="wechat"><a href="#"><img src="./img/wechat.png"></a></div>
+				<div class="Skype"><a href="#"><img src="./img/Skype.png"></a></div>
+		                          <div></div>
+			              </div>
+
+
+                          	</div><!--class="otherLogin"-->
+
+
+                          </div>
+
+				  
+          	           </div>
+         
+	</div>
+  <!---------------登录框---------------->
+
+	<script type="text/javascript" src="js/cascade-data.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+	<script type="text/javascript" src="js/blockdata.js"></script>
+	<script type="text/javascript" src="js/menu-detail.js"></script>
+	<script type="text/javascript" src="js/pageTwo.js"></script>
+    <script type="text/javascript" src="./js/Pc-signIn.js"></script> 
+           
+<script type="text/javascript">
+window.onload=function()//用window的onload事件，窗体加载完毕的时候
+{
+		function getNum(str)
+		{
+				var value = str.replace(/[^0-9]/ig,""); 
+				return value;
+		}
+		var loc = location.href;
+		var id = decodeURI(loc);//从=号后面的内容
+
+		var x=getNum(id);
+		var index=parseInt(x);
+		AjaxRemoteGetData.changeHtml(index);
+
+}
+</script>
+
+</body>
+</html>
+

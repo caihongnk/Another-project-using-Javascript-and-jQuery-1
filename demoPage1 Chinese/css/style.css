@@ -1,0 +1,293 @@
+*{ margin: 0; padding: 0;}
+.frame{  color: rgb(98,98,98);  }
+/*通用样式*/
+ul{ list-style: none}  li{ float: left; cursor: pointer; }
+
+a{ text-decoration: none; color: inherit; cursor: pointer;}    /*不能设置颜色,否则会影响随后对它颜色的动态设置*/
+.lightgray{}
+.left{ float: left;} .right{ float: right;}
+.red{ color: red}
+.mr3{ margin-right: 3px}
+.mt3{ margin-top: 3px}
+.mt5{ margin-top: 5px}
+.mr5{ margin-right: 5px}
+.mb3{ margin-bottom: 3px}
+.mr10{margin-right:10px}
+.ml250{ margin-left: 20px}
+.ml10{margin-left:10px}
+.mr20{margin-right:20px} 
+.ml20{margin-left:20px}
+.ml30{ margin-left: 30px; }
+.mr110{ margin-right: 110px}
+.em1{ font-size: 1em }
+.em09{ font-size: 0.9em}
+.blod{ font-weight: bold}
+.cursor{ cursor: pointer;}
+/*通用样式*/
+.body{ position: relative;}
+.frame{ position: relative; width: 100% }
+.clear{ clear: both}
+.mask{   width: 100%; height: 100%; background-color: black; position: fixed; top: 0; z-index: 9999; opacity: 0.6; display: none }
+/*-------------------header 顶部-------------------*/
+header{ width: 1200px; height: 42px; background-color: #f3f5f7; margin: 0 auto; line-height: 42px}
+.header-l li{ height:42px; margin-right: 10px; display: inline-block;}
+.header-r li{ width: 100px;height: 42px; margin-right: 40px ; display: inline-block; text-align: center; }
+
+
+/*-------------------header 顶部-------------------*/
+
+/*------------------------------------logo-------------------------------*/
+/*-------------------搜索框↓-------------------*/
+.logo{ width: 1200px; height: 126px; background-color:#f3f5f7; margin: 0 auto; position: relative;}
+.logo-pic{ width: 151px; height: 56px; background: url(../素材/logo.png) center; background-repeat: no-repeat; background-size: 151px 56px; margin-right: 149px; margin-top: 35px  }
+.inputBox{ height: 56px; background-color: pink;  margin-top: 35px ;  }
+.inputBox input{ display: block; width: 500px; height: 56px}
+.inputBox div{ width: 100px; height: 56px; background-color: black; color: white; text-align: center; line-height: 56px; font-size: 18px; font-weight: bold;}
+/*-------------------购物车↓-------------------*/
+.shopCart{ height: 56px; width: 158px; background-color: red;  margin-top: 35px; color: white; line-height: 54px; font-weight: bold; border: 1px solid lightgray; border-bottom: none; cursor: pointer;}
+.shopCart img{ display: inline-block;}
+.shopCart span:nth-child(4){ font-size: 25px}
+/*-------购物车下拉框---------*/
+.cartBox{ width: 280px;  background-color: white; position: absolute; border: 1px solid lightgray; top: 90px; left: 1041px; display:none; z-index: 999 }
+.cartBox-header{ width:  320px; height: 40px ; line-height: 40px; }
+.cartBox-header span{ margin-left: 28px}
+.cartBox-inner{ width: 260px; height: 301.5px;  margin: 0 auto; overflow: scroll; }
+.cartBox-inner-1{ width: 228px; height: 57px; border: 1px solid lightgray; box-sizing:border-box; border-left: none; border-right: none; position: relative;}
+.cartBox-inner-1-pic{ width: 57px; height: 57px;  float: left;}
+.cartBox-inner-1-pic img{ width: 50px; height: 50px; display: block;margin-top: 3.5px; margin-left: 3.5px}
+.cartBox-inner-1-title{ width: 171px; height: 57px;  float: left; font-size: 80%}
+.closeBtn{ width: 19px; height: 19px; position: absolute;top: 0; right: 0; cursor: pointer; }
+.cartBox-inner-1-title li:nth-child(1){ width: 171px; height: 36px; font-size:100%; line-height: 45px}
+.cartBox-inner-1-title li:nth-child(2){ width: 171px; height:21px;  }
+.cartBox-footer{   width: 320px; height: 50px; }
+.cartBox-footer-1{ width:170px; height: 50px; line-height: 50px ; float: left; margin-left:28px;  
+}
+.cartBox-footer-2{ width: 120px; height: 50px;  float: right;}
+.cartBtn{ width: 74px; height: 30px; background-color: red; margin-top: 9px; color: white; font-weight: bold; text-align: center; line-height: 34px; border-radius: 10px; cursor: pointer;}
+/*------------------------------------logo-------------------------------*/
+
+/*-------------------nav-------------------*/
+.nav{ width: 100%; height: 43px; background-color: black;}
+/*-------------------nav-------------------*/
+
+/*------------------------------------弹出层-------------------------------*/
+.pop{
+	width: 375px; z-index:10000; position: fixed; top: 50%; margin-top: -200px; left: 50%;margin-left: -184px; 
+	 background-color: white; display: ; border: 1px solid lightgray; display: none; 
+}
+.pop-1{ height: 53px; width: 400px;  line-height: 80px; font-size: 1.3em; }
+.pop-1-2{ height: 3px; position: relative;  }
+.pop-1-2 #red-line{  background-color: red; }
+.pop-close-btn{ width: 29px; height:29px ; right: 0; top: 0;  position: absolute; font-size: 2.8em; text-align: center; line-height: 29px; cursor: pointer; }
+.pop-1-3 #pop-login{  width: 338px; height: 290px; left: 50%; margin-left: -169px ; margin-top: 20px; position: absolute;	
+}
+.pop-1-3 #pop-regi{ width: 338px; height: 290px; left: 50%; margin-left: -169px ; margin-top: 20px; position: absolute; }
+div .alert{width: 337px; height: 25px; line-height: 25px }
+.checkbox{ width: 338px; height: 35px; }
+.checkbox div:nth-child(1){ float: left;}  .checkbox div:nth-child(2){ float: right;}
+input{ border: 1px solid lightgray}
+.submit{ cursor: pointer;}
+.pop-1-4{ width:  250px ; height: 50px;  position: absolute; bottom: 15px; margin-left: 50%; left:-125px;  }
+.pop-1-4 div{  float: left; height: 50px; width: 50px;}
+.pop-1-4 div img{height: 50px; width: 50px; display: block; background-color: gray; border-radius: 50%; cursor: pointer; }
+/*------------------------------------弹出层-------------------------------*/
+/*----------------------------------------------------nav 导航------------------------------------------------*/
+.nav{
+	width: 100%;
+	height: 43px;
+	background-color: #07111b;
+}
+
+.nav div{
+width: 1200px; 
+height: 43px;
+margin: 0 auto;
+}
+.nav div ul{ list-style: none}
+.nav div ul li{ display: inline-block; float: left; line-height: 43px; margin-right: 50px; font-size: 1em; font-weight: bold; color: white; cursor: pointer; }
+.nav div ul li:nth-child(1){ margin-left:232px; }
+/*----------------------------------------------------nav 导航------------------------------------------------*/
+
+/*-------------------------------------------------------------------banner--------------------------------------------------------------*/
+/*-------------------banner左侧-------------------*/
+.banner-frame{
+	width: 1200px;
+	height:515px ;
+	margin: 0 auto;
+	position: relative;
+}
+.banner-left{
+	width: 209px; height: 515px; float: left; margin-right: 8px; 
+}
+.banner-left-mask{
+	width: 211px;
+	height:568px;
+	background-color: rgb(240,20,20);
+	position: absolute;
+	z-index: 99;
+	top: -53px;
+	opacity:0.9;
+}
+.banner-left-content{
+	width: 211px;
+	height:568px;
+	position: absolute;
+	z-index: 999;
+	top: -53px;
+	color:white
+}
+.banner-left-content-title{ width: 211px; height: 53px; position: relative;}
+.banner-left-content-title img{ width: 20px; height: 17px; float: left; }
+.banner-left-content-title div:nth-child(1){ width:20px;height:17px; float: left; margin-top: 2.5px; top: 18px; position: absolute;}
+.banner-left-content-title div:nth-child(2){ width:74px;height:17px; float: left; position: absolute; top: 18px; left: 30px  }
+.banner-left-content-topics{width: 211px; height: 515px;color: white; }
+.banner-left-content-topics div{ width: 211px; height: 36.9px;  padding-left: 10px; box-sizing: border-box; line-height: 36.9px; }
+.banner-left-content-topics div span{display: block; float: left; font-size: auto;}
+.banner-left-content-topics div i{display: block; float: right; margin-right: 5px; font-weight: bold}
+
+.banner-content-display{ width:733px; height: 545px; background-color: #f3f5f7 ;  position: absolute; top:0px; left: 209px;z-index: 99; display: none; padding-top: 15px; boxsizing:border-box;}
+
+.display{ width: 728px; height:62px ;margin: 0 auto ; color: gray ; margin-bottom: 5px; }
+.display-title{ width: 100px;  height: 45px;   border-top: none; border-bottom: none; border-left: none; line-height:45px; margin-left: 10px }
+.display-title span{ float: right; font-size: 1.5em; font-weight: bold; }
+.display-content{ width:601px; height: 45px; font-size: 98%; color: gray}
+.display-content a{ margin-right: 10px;}
+/*-------------------banner左侧-------------------*/
+/*---------------------------------------------------------------------轮播图-------------------------------------------------------------*/
+           .banner{
+	width: 725px; height: 515px; background-color: lightblue;float: left;
+	position: relative;overflow: hidden
+           }
+	.banner-slide{
+	width: 725px;
+	height: 515px;
+	background-repeat: no-repeat;
+	display: none;	
+	}
+	.slide-active{ display: block;}
+           
+           .slide1{  background-image: url(../素材/focus-carousel/1.jpg); background-size: 725px 515px;}
+           .slide2{  background-image:url(../素材/focus-carousel/2.jpg); background-size: 725px 515px;}
+           .slide3{ background-image:url(../素材/focus-carousel/3.jpg); background-size: 725px 515px;}
+           .slide4{ background-image:url(../素材/focus-carousel/4.jpg); background-size: 725px 515px;}
+           .slide5{ background-image:url(../素材/focus-carousel/5.jpg); background-size: 725px 515px;}
+
+
+           .dots{
+	position: absolute;
+	text-align: right;
+	left: 294.5px;
+	bottom: 20px;
+           }
+           .dots span{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin-left: 9px;
+	background-color: rgb(55,55,55);
+	cursor: pointer;
+	box-shadow: 0 0 0 3px white inset;
+
+           }
+           .dots .active{ background-color: white; box-shadow: 0 0 0 3px gray inset; }
+
+           .button{
+		width: 45.5px;
+		height: 65px;
+		background-color: green;
+		position: absolute; 
+		top: 197.5px;
+           }
+           .button:hover{
+           	background-color: #333;
+           	opacity: 0.6;
+
+           }
+           .nextButton{
+                     right: 0px;
+                     background: url(../素材/focus-carousel/pre.png) center  center no-repeat;
+
+           }
+           .prevButton{ background: url(../素材/focus-carousel/pre2.png) center center no-repeat;}
+/*--------------------------------------轮播图-----------------------------------------------------*/
+/*-------------------banner右侧-------------------*/
+.banner-right{
+	width: 250px; height: 515px;  float:right; 
+}
+.banner-right-1{ width: 250px; height: 198px; border: 1px solid lightgray}
+.banner-right-1-0{  width: 250px; height: 50px;font-size: 1.2em; line-height: 50px}
+.banner-right-1-0 div{  height: 50px; line-height: 50px }
+.banner-right-1-0  i{font-size: 0.8em}
+.em09{ font-size: 0.9em}
+.em1{ font-size: 1em }
+.em08{ font-size: 0.8em}
+.banner-right-1-1{  width: 250px; height: 148px;}
+.banner-right-1-1 ul li{ margin-bottom: 10px}
+
+
+.banner-right-2{ width: 250px; height: 216px; }
+.banner-right-2-1,.banner-right-2-2,.banner-right-2-3{ width:250px ; height: 72px;}
+.banner-right-2-1 div,.banner-right-2-2 div,.banner-right-2-3 div{ width: 62.5px; height: 72px; border: 1px solid lightgray; float:left; box-sizing:border-box; text-align: center;  padding-top:44px ;  font-size: 0.8em; cursor: pointer;}
+.banner-right-2-1 div:nth-child(1){  background:url(../素材/icon/1.png) 18.25px 7px; background-size:26px 34px; background-repeat: no-repeat; }
+.banner-right-2-1 div:nth-child(2){  background:url(../素材/icon/2.png) 18.25px 7px; background-size:26px 34px; background-repeat: no-repeat; }
+.banner-right-2-1 div:nth-child(3){  background:url(../素材/icon/3.png) 18.25px 7px; background-size:26px 34px; background-repeat: no-repeat; }
+.banner-right-2-1 div:nth-child(4){  background:url(../素材/icon/4.png) 18.25px 7px; background-size:26px 34px; background-repeat: no-repeat; }
+.banner-right-2-2 div:nth-child(1){  background:url(../素材/icon/5.png) 18.25px 7px; background-size:26px 34px; background-repeat: no-repeat;}
+.banner-right-2-2 div:nth-child(2){  background:url(../素材/icon/6.png) 18.25px 7px; background-size:26px 34px; background-repeat: no-repeat; }
+.banner-right-2-2 div:nth-child(3){  background:url(../素材/icon/7.png) 18.25px 7px; background-size:26px 34px; background-repeat: no-repeat; }
+.banner-right-2-2 div:nth-child(4){  background:url(../素材/icon/8.png) 18.25px 7px; background-size:26px 34px; background-repeat: no-repeat;}
+.banner-right-2-3 div:nth-child(1){  background:url(../素材/icon/9.png) 18.25px 7px; background-size:26px 34px; background-repeat: no-repeat; }
+.banner-right-2-3 div:nth-child(2){  background:url(../素材/icon/10.png) 18.25px 7px; background-size:26px 34px; background-repeat: no-repeat;}
+.banner-right-2-3 div:nth-child(3){  background:url(../素材/icon/11.png) 18.25px 7px; background-size:26px 34px; background-repeat: no-repeat;}
+.banner-right-2-3 div:nth-child(4){  background:url(../素材/icon/12.png) 18.25px 7px; background-size:26px 34px; background-repeat: no-repeat;}
+
+
+.banner-right-3{ width: 250px; height: 101px; background-color:  purple; background: url(../素材/ad.png); background-size: 250px 101px; cursor: pointer;}
+/*-------------------banner右侧-------------------*/
+/*-------------------------------------------------------------------banner--------------------------------------------------------------*/
+/*--------------------------------------floor------------------------------------*/
+#floor1,#floor2,#floor3,#floor4,#floor5{ width: 1200px; height:558px; margin-top: 30px;  }
+.floor-title{ width: 1200px; height: 50px; border: 2px solid red; border-top: none;; border-left: none; border-right: none; position: relative;}
+.floor-title-1{height: 50px; width:200px ; }
+.floor-title-1 div:nth-child(1){ width: 40px; height: 40px; background-color: black; text-align: center; line-height: 40px; border-radius: 50%; font-size: 1.5em; font-weight: bold; color: white; margin-right: 15px}
+.floor-title-1 div:nth-child(2){ font-size: 1.3em; line-height: 50px; color: black}
+.floor-title-2{height: 50px; width:auto; line-height: center; }
+.floor-title-2-1, .floor-title-2-2, .floor-title-2-3, .floor-title-space{ margin-right: 13px; width: auto; line-height: 50px }
+.floor-title-2-1, .floor-title-2-2, .floor-title-2-3{ cursor: pointer;}
+.floor-arrow{ position: absolute; left: 1048.5px; bottom: -6px; z-index:99;  border-top: none; border-left: none; border-right: none; }
+.floor-content{ width: 1200px; height:508px;  }
+.floor-content div{ box-sizing:border-box;  width: 176px; height: 216px;  float: left; margin-left: 20px ; margin-top: 25px; text-align: center; padding-top: 15px}
+.floor-content div img{ width: 150px; height: 136px; cursor: pointer;}	
+.floor-content div p{ font-size: 90%; cursor: pointer;}
+.floor-content div b{ font-weight: bold; color: red}
+/*--------------------------------------floor--------------------------------------*/
+/*---------------------楼层坐标按钮----------------------*/
+.flrNav{ position: fixed;  width: 34px; height: 165px ; margin-left: 50%; left:-649px; top: 50%; display: none }
+.flrNav a{ display: block ;width: 34px; height: 34px; box-sizing:border-box ; border-top: 1px solid gray;  text-align: center; line-height: 34px; font-weight: bold; cursor: pointer; }
+.flrNav a:nth-child(1){  border-top: none }
+/*---------------------楼层坐标按钮----------------------*/
+
+/*-------------------------------------------右侧服务区按钮-------------------------------------*/
+.service{position: fixed;width: 45px; height: 225px;  right: 0; top: 380px;   }
+.service a{ display: block;width: 45px; height: 45px; box-sizing:border-box ; border-top: 1px solid gray; background-color: lightgray;  position: relative; right: 74.5px; } 
+.service a img{ margin: 0 auto; width: 33px; height: 33px; display: block; margin-top: 50%; top: -16.5px; margin-left: 50%; left: -16.5px; position: absolute;}
+.service a:nth-child(1){ border-top: none;}
+
+.service-subLink{ position: fixed;width: 60px; height: 225px;  right: 0; top: 380px; } 
+.service-subLink div{display: none; width:60px; height: 45px; box-sizing:border-box ;  background-color: gray;  position: relative; right: 119.5px;  color: white;font-weight: bold; line-height: 45px; text-align: center; position: absolute;}
+.service-subLink div:nth-child(1){ top: 0px; }
+.service-subLink div:nth-child(2){ top: 45px;  }
+.service-subLink div:nth-child(3){ top: 90px; }
+.service-subLink div:nth-child(4){ top: 135px;  }
+.service-subLink div:nth-child(5){ top: 180px;  }
+/*-------------------------------------------右侧服务区按钮-------------------------------------*/
+
+.about{ width: 1200px; height: 139px; padding-top:20px; box-sizing:border-box ; }
+.about div{ width: 250px; height: 100px ;  float: left;  float: left; margin-right: 25px; margin-left: 25px;}
+.about div:nth-child(3){ width: 290px; margin-left: 5px; margin-right: 5px;}
+.about div:nth-child(4){ width: 260px; margin-right: 3px; ,margin-left: 3px}
+.about div span{ color: gray; cursor: pointer;}
+
+footer{ width: 100%; height: 95px; margin-top: 20px; text-align: center; padding-top: 20px; box-sizing:border-box ; background-color: #f3f5f7}
+/*------------------------------页脚------------------------------*/

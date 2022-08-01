@@ -1,0 +1,315 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing:border-box;
+}
+.displayNone{ display: none;}
+a{
+	text-decoration: none;
+}
+body{
+	font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
+	font-size: 14px;
+	
+}
+.clearfix{
+            clear: both;
+            width: 0;
+            height: 0;
+            zoom:1;
+}
+.box{
+	margin: 0 auto;
+	max-width: 6.4rem;	
+	background: #f0f0f0;
+	position: relative;
+	border: 0.01rem solid lightgray;		
+}
+
+/*---------banner-------*/
+.box .banner{
+	width: 100%;
+	height:0.55rem;
+	background-color: yellow; 
+	background: url(../img/logo.png) center no-repeat;
+	background-size: 100% 0.55rem;
+}
+
+/*-----------search样式---------------*/
+.search{
+	width: 6.4rem;
+	height: 0.55rem;
+	background-color: orange;
+	background: url(../img/ui-search.jpg)center no-repeat;
+	background-size: 6.4rem 0.55rem;
+	position: relative;
+	
+}
+.ui-search-selected{
+	width: 1.34rem;
+	height: 0.55rem;
+	line-height: 0.55rem;	
+	font-size: 0.19rem;
+	color: white;	
+	cursor: pointer;
+	padding-left: 0.1rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-weight: bold;
+}
+.search input{
+	display: block;
+	width: 4.21rem;
+	height: 0.50rem;
+	color: rgb(216,216,216);
+	position: absolute;
+	left: 1.35rem;;
+	top: 0.03rem;
+	font-size: 0.18rem;
+	border: none;
+}
+.search .ui-search-select-list{
+	position: absolute;
+	top: 0.55rem;
+
+}
+.search .ui-search-select-list a{
+	display: block;
+	width:1.34rem;
+	height: 0.48rem;
+	background-color: white;
+	text-align: center;
+	line-height: 0.48rem;
+	font-size: 0.15rem;
+	color: gray;
+	background-color: white;	
+}
+.search .ui-search-select-list a:hover{
+	background-color: lightgray;
+	color: white;
+}
+.ui-search-select-list{
+	z-index: 9;
+	display: none;
+}
+.ui-search-submit{
+	display: block; 
+	width: 0.40rem; 
+	height: 0.38rem;
+}
+/*-----------nav样式---------------*/
+.nav{
+	width: 100%;
+	height: 0.47rem;
+	background-color: rgb(0,162,232);
+	display: flex;
+}
+.nav .link{
+	display: block;
+	height: 0.47rem;
+	font-size: 0.25rem;
+	color: white;	
+	width: 50%;
+	text-align: center;
+	line-height: 0.47rem;
+
+}
+.nav .link:hover{
+	background-color: rgb(0,131,187);
+}
+/*-----------------footer------------------*/
+
+footer{  
+	margin-top: 0.1rem;
+	width: 100%;
+	height: 0.6rem;
+	background-color:gray;	
+	font-weight: bold;
+	position: absolute;
+	bottom: 0rem;
+}
+footer .wrap{
+	display: flex;
+	justify-content :space-around;
+	align-items:center;
+
+}
+footer .wrap div{
+           height: 0.3rem;
+           margin-top: 0.17rem;
+           color: white;
+           font-weight: bold;
+           text-align: center;
+           line-height: 0.3rem;
+          
+}
+footer .wrap div a{
+	font-size: 0.14rem;
+	margin-right: 0.2rem;
+	font-weight: bold;
+	color: white;
+}
+footer .wrap div a:after{
+	content:'|';
+	font-size: 0.15rem;
+	margin-right: 0.08rem;
+	margin-left: 0.08rem;
+	font-weight: none;
+}
+
+@media screen and ( max-width: 375px){
+             footer .wrap div a{
+             	font-size: 0.13rem;
+             	margin-right: 0.2rem;
+             }
+             footer .wrap div a:after{
+             	content: none;
+             }
+             
+}
+
+footer .wrap div a:nth-child(4):after{
+	content:none;
+}
+footer .wrap div a:hover{
+	color: lightgray;
+}
+
+/*-----------------filter wrap-----------------*/
+#filter{         
+          width: 100%;
+          background-color:rgb(250,250,250); 
+}
+#filter h5{
+	color: rgb(0,162,232);
+	font-weight: bold;
+	margin-left: 0.05rem;
+}
+#filter .group .condition{
+	color: #4c4948;
+	position: relative;
+	margin: 5px 14px 5px 0px;
+	padding:  0 5px;
+	margin-left: 5px;
+	display: inline-block;
+}
+
+#filter .group .aTag .distric{ margin: 5px 25px 5px 0px; } 
+
+#filter .group .aTag .distric{ margin-left: 5px}
+#filter .group .caption span{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+#filter .group .condition_focus{
+	background-color: rgb(0,162,232);
+	color: white;
+} 
+/**/
+ @media screen and (max-width: 321px){
+ 	#filter .group .condition{
+ 		  font-size: 0.25rem;
+ 	}
+ }
+/*--------------------detailist--------------------*/
+ .datalist{
+       width: 100%;  
+       margin-bottom: 0.65rem;
+       background-color: white;
+       font-size: 0.17rem;
+ }
+.datalist .item{
+       width: 100%;
+       height: 2rem; 
+       padding-left: 1.6rem; 
+       position: relative;
+}
+.datalist .item .cover{
+     position: absolute;
+     height: 1.8rem;
+     left: 0.08rem;    
+     top: 0.22rem;
+
+}
+.datalist .item img{
+	width: 1.6rem;
+	height: 1.8rem;
+}
+.datalist .item .address,
+.datalist .item .phone,
+.datalist .item .time,
+.datalist .item .name{
+	margin-bottom: 0.08rem;
+	left: 2rem;
+	position: absolute;
+	padding-left: 0.25rem;
+}
+
+.datalist .item .name{
+	top: 0.22rem;
+	font-weight: bold;
+}
+.datalist .item .name span{
+	color: orange;
+	margin-left: 1.9rem;
+}
+
+.datalist .item .phone{
+           top:0.52rem;
+           background: url(../img/phone.png) no-repeat;
+           background-size: 8%;	
+}
+.datalist .item .time{
+	top:0.82rem;
+	background: url(../img/time.png) no-repeat;
+           background-size: 13%;	
+}
+.datalist .item .address{
+	top:1.12rem;
+           background: url(../img/address.png) no-repeat;
+           background-size: 8%;
+}
+.datalist .item .button a{
+	position: absolute;
+	width: 1.25rem;
+	height: 0.45rem;
+	top: 1.52rem;
+	display: block;
+	background-color: orange;
+	left: 2.575rem;
+	background: url(../img/button-now.png) no-repeat 0 0;
+	background-size: 200%;
+}
+.datalist .item .button a:hover{
+	background-position: -125px 0;
+}
+
+/*--------------------配件区--------------------*/
+.backTop{
+	position: fixed;
+	bottom:0.9rem ;
+	width: 0.9rem;
+	height: 0.8rem;
+	left: 80%;
+	z-index: 10;
+	display: none;
+	cursor: pointer;
+
+}
+.backTop img{
+	width: 0.9rem;
+	height: 0.8rem;	
+}
+@media screen and (min-width: 368px) and ( min-width: 750px){           /*---适配屏幕大于750-----*/ 
+              
+	              .backTop{
+		left: 70%;
+	          }
+}
+@media screen and (min-width: 368px) and ( min-width: 1620px){
+	              .backTop{
+		left: 60%;
+	          }
+}

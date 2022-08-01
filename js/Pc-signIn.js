@@ -1,0 +1,128 @@
+
+
+//-------------------------防止点击冒泡-------------------------------
+$('window').on("click",function(){
+    event.cancelBubble = true;
+})
+
+//-------------顶部动态消息---------------------------
+
+var info=[
+    '<li>Welcome to visite my Demo Web <i class="fa fa-smile-o fa-lg"></i></li>',
+    "Here web pages were create by using:",
+    "mainly, Html,CSS,Javascript and jQuery.",
+    "You wil see it also works in Phone.",
+	"please open this site on Mobile Phone to check the mobile version.",
+    "It was designed accordingly to the Mobile Terminal.",
+    "They are just dummy demo web pages, I will add more features later...",
+];
+var len=info.length;
+var ul=$('.top .call');
+var x=1;
+
+
+    ul.append('<li>Welcome to visite my Demo Web <i class="fa fa-smile-o fa-lg"></i></li>'); 
+    ul.append("<li>Here web pages were create by using: </li>"); 
+    
+    setInterval(function(){
+        x++;
+        $("ul li:nth-child(1)").animate({marginTop:-25},1000) 
+        $("ul li:nth-child(2)").animate({marginTop:0} ,1000) 
+
+        setTimeout(function(){
+            $("ul li:nth-child(1)").remove();
+            $('ul').append( '<li>'+info[x]+'</li>' );
+			
+        },1000)
+
+        if(x==len){
+            x=0;
+        }
+        
+    },2000)
+
+
+
+
+
+
+
+
+//-------------------登录部分----------------------
+
+
+
+var html=$('#add-items').html();
+
+
+
+$('.boxx .caption div:nth-child(1) ').on("click",function(){                 //"Login"被按中时
+           $(this).addClass("focus").siblings().removeClass("focus");
+           $('.boxx .account .login input').val("Login");
+    
+           $('.boxx .account #EnterAgain').hide();
+           $('.boxx .account .confirm').hide();
+            
+           $('.boxx .account .select').show();
+           $('.boxx .account .otherLogin').show();
+
+          $('.boxx .account .otherLogin').find("add").remove()
+
+          return false;
+
+})
+
+
+
+
+$('.boxx .caption div:nth-child(2) ').on("click",function(){                 //"Register"被按中时
+           $(this).addClass("focus").siblings().removeClass("focus");
+           $('.boxx .account .login input').val("Register");
+         
+           $('boxx .account #EnterAgain').show();
+           $('.boxx .account .confirm').show();
+
+           $('.boxx .account .select').hide();
+           $('.boxx .account .otherLogin').hide();
+           
+           //------------------------设置提交按钮:  $('.boxx .account .login input') 距离----------------------
+          
+           //$('.boxx .account .login input').css({ "position":"absolute","bottom": "0" });
+
+            $('.boxx .account .otherLogin .item + .item').addClass("add");
+
+            return false;
+
+              
+})
+
+           
+
+$('.boxx .account .otherLogin .item #more a').on("click",function(){               //小方块"more" 按下时
+             $('.boxx .account .otherLogin .item + .item').toggleClass("add");        
+             return false;  
+
+})
+
+//".boxx #backBtn" back按钮按下时 跳转前一页
+
+$('.boxx #backBtn').on("click",function(){
+             window.history.go(-1);
+
+})
+
+//--------------点击"Login"按钮---------------------
+
+$('.top .welcome .login').on("click",function(){
+           $('.mask').show();
+           $('#app').show();
+
+
+})
+
+//-------------点击关闭按钮---------------------------
+
+           $('#app .boxx .close a').on("click",function(){    
+                               $('.mask').hide();
+                               $('#app').hide();
+           })

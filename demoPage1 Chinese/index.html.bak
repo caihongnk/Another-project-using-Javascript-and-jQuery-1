@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>幕淘</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="frame">
+
+
+		<!-------------------------------header 顶部-------------------------------->
+		<header>
+                               <div class="header-l  left">
+                               	<ul>
+                               		<li class=" red">亲,请登录<a name="returnTop"></a></li>
+                               		<li class="changeRed">
+									<b>
+									<a href="javascript:void(0);" onclick="window.location.href='demoPage1/index.html'" target="_blank" class="other">English</a>
+									</b>
+									</li>
+                               		
+                               	</ul>
+                               </div>
+                               <div class="header-r  right">
+                               	<ul>
+                               		<li>我的幕淘<span><img src="素材/icon/22.png"></span></li>
+                               		<li>收藏夹<span><img src="素材/icon/22.png"></span></li>
+                               		<li>商品分类<span><img src="素材/icon/22.png"></span></li>
+                               		<li>卖家中心<span><img src="素材/icon/22.png"></span></li>
+                               		<li>联系客服<span><img src="素材/icon/22.png"></span></li>
+                               	</ul>
+                               </div>
+		</header>
+		<!-------------------------------header 顶部-------------------------------->
+		<div class="logo"><!---logo-->
+
+             <div class="logo-pic left"></div>
+
+             <div class="inputBox left">
+               <input type="text" name="searchText" class="left" id="searchText" placeholder="灵魂美食1元抢"><div class="right cursor">搜索</div>
+             </div>
+
+              <div class="shopCart right">
+                 <img class="ml10" src="./素材/icon/26.png"><span class="mr10"></span><span class="mr10">购物车</span><span class="mr10">|</span><span class="mr10">0</span><img src="./素材/icon/23.png">
+              </div>
+
+           <div class="cartBox">   <!-- 购物车下拉框-->
+                      <div class="cartBox-header">
+                        <span>最新加入的商品</span>
+                      </div>
+                      <div class="cartBox-inner">
+
+                        <div class="cartBox-inner-1">
+                          <div class="cartBox-inner-1-pic"><img src="素材/cart/1.png"></div>
+                          <div class="cartBox-inner-1-title">
+                            <ul><li class="active">adidas 阿迪达斯 训练 男子</li><li>$300×1</li></ul>
+                          </div>
+                          <div class="closeBtn">×</div>
+                        </div>
+
+                         <div class="cartBox-inner-1">
+                          <div class="cartBox-inner-1-pic"><img src="素材/cart/2.png"></div>
+                          <div class="cartBox-inner-1-title">
+                            <ul><li class="active">adidas 阿迪达斯 训练 男子</li><li>$300×1</li></ul>
+                          </div>
+                          <div class="closeBtn">×</div>
+                        </div>
+
+                        <div class="cartBox-inner-1">
+                          <div class="cartBox-inner-1-pic"><img src="素材/cart/3.png"></div>
+                          <div class="cartBox-inner-1-title">
+                            <ul><li class="active">adidas 阿迪达斯 训练 男子</li><li>$300×1</li></ul>
+                          </div>
+                          <div class="closeBtn">×</div>
+                        </div>
+
+                        <div class="cartBox-inner-1">
+                          <div class="cartBox-inner-1-pic"><img src="素材/cart/4.png"></div>
+                          <div class="cartBox-inner-1-title">
+                            <ul><li class="active">adidas 阿迪达斯 训练 男子</li><li>$300×1</li></ul>
+                          </div>
+                          <div class="closeBtn">×</div>
+                        </div>
+
+                        <div class="cartBox-inner-1">
+                          <div class="cartBox-inner-1-pic"><img src="素材/cart/5.png"></div>
+                          <div class="cartBox-inner-1-title">
+                            <ul><li class="active">adidas 阿迪达斯 训练 男子</li><li>$300×1</li></ul>
+                          </div>
+                          <div class="closeBtn">×</div>
+                        </div>
+
+                        <div class="cartBox-inner-1">
+                          <div class="cartBox-inner-1-pic"><img src="素材/cart/book.jpg"></div>
+                          <div class="cartBox-inner-1-title">
+                            <ul><li class="active">adidas 阿迪达斯 训练 男子</li><li>$300×1</li></ul>
+                          </div>
+                          <div class="closeBtn">×</div>
+                        </div>
+                      </div>
+                      <div class="cartBox-footer">
+                        <div class="cartBox-footer-1">共6件商品,合计:2000元</div>
+                        <div class="cartBox-footer-2"><div class="cartBtn">去结账</div></div>
+                      </div>    
+                
+           </div>  <!-- 购物车下拉框-->
+
+            </div><!---logo-->
+
+
+<!------------------nav------------------>
+		<div class="nav">
+           <div>
+            <ul>
+              <li>数码城</li>
+              <li>天黑黑</li>
+              <li>团购</li>
+              <li>发现</li>
+              <li>二手特价</li>
+              <li>名品汇</li>
+            </ul>
+          </div>
+          </div>
+<!------------------nav------------------>
+
+<!--------------------------------------banner---------------------------------->
+<div class="banner-frame">
+    <div class="banner-content-display" id="banner-display">    <!--变换的内容-->
+      <div class="display">
+           <div class="display-title left"><b>手机通讯</b><span>|</span></div>
+           <div class="display-content right"><a href="#"></a><a href="#"></a><a href="#"></a></div>
+      </div>
+       <div class="display">
+           <div class="display-title left"><b>通讯</b><span>|</span></div>
+           <div class="display-content right" id="x"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></div>
+      </div>
+      <div class="display">
+           <div class="display-title left"><b>手机通讯</b><span>|</span></div>
+           <div class="display-content right"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></div>
+      </div>
+      <div class="display">
+           <div class="display-title left"><b>手机通讯</b><span>|</span></div>
+           <div class="display-content right"><a href="#"></a><a href="#"></a><a href="#"></a></div>
+      </div>
+      <div class="display">
+           <div class="display-title left"><b>手机通讯</b><span>|</span></div>
+           <div class="display-content right"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></div>
+      </div> 
+      <div class="display">
+           <div class="display-title left"><b>手机通讯</b><span>|</span></div>
+           <div class="display-content right"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></div>
+      </div> 
+      <div class="display">
+           <div class="display-title left"><b>手机通讯</b><span>|</span></div>
+           <div class="display-content right"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></div>
+      </div> 
+      <div class="display">
+           <div class="display-title left"><b>手机通讯</b><span>|</span></div>
+           <div class="display-content right"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></div>
+      </div>      
+  </div>   <!--变换的内容-->
+  <!------------------banner左侧------------------>
+  <div class="banner-left"></div>
+  <div class="banner-left-mask"></div>
+  <div class="banner-left-content">
+        <div class="banner-left-content-title">
+        <div><img src="素材/icon/18.png"></div><div>商品分类</div>
+        </div>
+        <div class="banner-left-content-topics" id="banner-topics">
+        <div class="sub-title"><span>家用电器</span><i>&gt</i></div>
+        <div class="sub-title"><span>手机、运营商、数码</span><i>&gt</i></div>
+        <div class="sub-title"><span>电脑、办公</span><i>&gt</i></div>
+        <div class="sub-title"><span>家居、家具、家装、厨具</span><i>&gt</i></div>
+        <div class="sub-title"><span>男装、女装、童装、内衣</span><i>&gt</i></div>
+        <div class="sub-title"><span>化妆、清洁、宠物</span><i>&gt</i></div>
+        <div class="sub-title"><span>户外运动、钟表</span><i>&gt</i></div>
+        <div class="sub-title"><span>化妆、清洁、宠物</span><i>&gt</i></div>
+        <div class="sub-title"><span>化妆、清洁、宠物</span><i>&gt</i></div>
+        <div class="sub-title"><span>男装、女装、童装、内衣</span><i>&gt</i></div>
+        <div class="sub-title"><span>家居、家具、家装、厨具</span><i>&gt</i></div>
+        <div class="sub-title"><span>家居、家具、家装、厨具</span><i>&gt</i></div>
+        <div class="sub-title"><span>化妆、清洁、宠物</span><i>&gt</i></div>
+        <div class="sub-title"><span>化妆、清洁、宠物</span><i>&gt</i></div>
+        </div>
+</div>
+  <!------------------banner左侧------------------>
+  <!------------------轮播图------------------>
+<div class="banner" id="banner">
+  <a href="#" >
+    <div class="banner-slide slide1 slide-active "></div>
+  </a>
+  <a href="#">
+    <div class="banner-slide slide2 "></div>
+  </a>
+  <a href="#">
+    <div class="banner-slide slide3"></div>
+  </a>
+  <a href="#">
+    <div class="banner-slide slide4  "></div>
+  </a>
+  <a href="#">
+    <div class="banner-slide slide5"></div>
+  </a>
+
+  <div class="dots" id="dots">
+  <span class="dott active"></span>
+  <span class="dott"></span>
+  <span class="dott"></span>
+  <span class="dott"></span>
+  <span class="dott "></span>
+  </div>
+           
+           <a href="javascript:void(0)" class="button prevButton" id="prev"></a>
+           <a href="javascript:void(0)" class="button nextButton" id="next"></a>
+</div>
+  <!------------------轮播图------------------>
+<!------------------banner右侧------------------>
+<div class="banner-right">
+    <div class="banner-right-1">
+      <div class="banner-right-1-0">
+        <span class="mr20"></span><span class="em1 blod ">幕快报</span><span class="mr110"></span><span class="em09 more redToBlack"><a href="">更多</a><span class="mr3"></span><i>&gt</i></span>
+      </div>
+      <div class="banner-right-1-1" >
+        <ul class="em09 auto" >
+          <li><b>[特惠]</b>&nbsp<a href="" class="redToBlack">精选图书每满100减50</a></li>
+          <li><b>[特惠]</b>&nbsp<a href="" class="redToBlack">爆款手机12期免息 抽奖赢电视</a></li>
+          <li><b>[公告]</b>&nbsp<a href="" class="redToBlack">因广州图书馆搬迁升级配送延迟</a></li>
+          <li><b>[特惠]</b>&nbsp<a href="" class="redToBlack">今日12期免息 抽奖赢电视</a></li>
+          <li><b>[公告]</b>&nbsp<a href="" class="redToBlack">广东、福建受台风影响延迟</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner-right-2">
+      <div class="banner-right-2-1 shake"><div><a href="">话费</a></div><div><a href="">机票</a></div><div><a href="">电影票</a></div><div><a href="">游戏</a></div></div>
+      <div class="banner-right-2-2 shake"><div><a href="">彩票</a></div><div><a href="">加油卡</a></div><div><a href="">酒店</a></div><div><a href="">火车票</a></div></div>
+      <div class="banner-right-2-3 shake" ><div><a href="">众筹</a></div><div><a href="">理财</a></div><div><a href="">礼品卡</a></div><div><a href="">白条</a></div></div>
+    </div>
+    <div class="banner-right-3"></div>
+  </div>
+<!------------------banner右侧------------------>
+<!--------------------------------------banner---------------------------------->
+<!------------------banner右侧------------------>
+      <div class="clear"></div>  <!--清除浮动-->
+
+  		<div id="floor1" >
+                 <div class="floor-title">
+                     <div class="floor-title-1 left">
+                     <div class="left"><a name="anchor1"></a>1F</div>
+                     <div class="left">服装鞋包</div>
+                </div>
+                   <div class="floor-title-2 right">
+                     <div class="floor-title-2-1 left">大牌</div>
+                     <div class="floor-title-space left" >|</div>
+                     <div class="floor-title-2-2 left">男装</div>
+                     <div class="floor-title-space left">|</div>
+                     <div class="floor-title-2-3 left">女装</div>
+                     <div class="floor-arrow"><img src="素材/floor-arrow.png"></div>
+                   </div>
+                 </div>
+                 <div class="floor-content">
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                 </div>
+      </div>
+
+      <div id="floor2" >
+                 <div class="floor-title">
+                     <div class="floor-title-1 left">
+                     <div class="left"><a name="anchor2"></a>2F</div>
+                     <div class="left">个护美妆</div>
+                </div>
+                   <div class="floor-title-2 right">
+                     <div class="floor-title-2-1 left">热门</div>
+                     <div class="floor-title-space left" >|</div>
+                     <div class="floor-title-2-2 left">国际大牌</div>
+                     <div class="floor-title-space left">|</div>
+                     <div class="floor-title-2-3 left">国货精品</div>
+                     <div class="floor-arrow"><img src="素材/floor-arrow.png"></div>
+                   </div>
+                 </div>
+                 <div class="floor-content">
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                 </div>
+      </div>
+
+      <div id="floor3" >
+                 <div class="floor-title">
+                     <div class="floor-title-1 left">
+                     <div class="left"><a name="anchor3"></a>3F</div>
+                     <div class="left">手机通讯</div>
+                </div>
+                   <div class="floor-title-2 right">
+                     <div class="floor-title-2-1 left">热门</div>
+                     <div class="floor-title-space left" >|</div>
+                     <div class="floor-title-2-2 left">新机尝试</div>
+                     <div class="floor-title-space left">|</div>
+                     <div class="floor-title-2-3 left">品质优选</div>
+                     <div class="floor-arrow"><img src="素材/floor-arrow.png"></div>
+                   </div>
+                 </div>
+                 <div class="floor-content">
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                 </div>
+      </div>
+
+      <div id="floor4" >
+                 <div class="floor-title">
+                     <div class="floor-title-1 left">
+                     <div class="left"><a name="anchor4"></a>4F</div>
+                     <div class="left">家用电器</div>
+                </div>
+                   <div class="floor-title-2 right">
+                     <div class="floor-title-2-1 left">热门</div>
+                     <div class="floor-title-space left" >|</div>
+                     <div class="floor-title-2-2 left">大家电</div>
+                     <div class="floor-title-space left">|</div>
+                     <div class="floor-title-2-3 left">进口精品</div>
+                     <div class="floor-arrow"><img src="素材/floor-arrow.png"></div>
+                   </div>
+                 </div>
+                 <div class="floor-content">
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                 </div>
+      </div>
+           
+      <div id="floor5" >
+                 <div class="floor-title">
+                     <div class="floor-title-1 left">
+                     <div class="left"><a name="anchor5"></a>5F</div>
+                     <div class="left">副食品</div>
+                </div>
+                   <div class="floor-title-2 right">
+                     <div class="floor-title-2-1 left">热门</div>
+                     <div class="floor-title-space left" >|</div>
+                     <div class="floor-title-2-2 left">进口/国产</div>
+                     <div class="floor-title-space left">|</div>
+                     <div class="floor-title-2-3 left">低热量</div>
+                     <div class="floor-arrow"><img src="素材/floor-arrow.png"></div>
+                   </div>
+                 </div>
+                 <div class="floor-content">
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                    <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                  <div>
+                    <img src="">
+                   <p class="flr-title"></p>
+                    <b class="flr-price"></b>
+                  </div>
+                 </div>
+      </div>
+<!------------------banner右侧------------------>
+
+		<div class="about">
+                    <div>
+                      <h3>消费者保障</h3>
+                      <p class="mt5"></p>
+                      <p><span>保障范围</span><span class="mr20"></span><span>退货流程</span><span class="mr20"></span><span>服务中心</span></p>
+                      <p><span>更多特色服务</span></p>
+                    </div>
+                    <div>
+                      <h3>新手上路</h3>
+                      <p class="mt5"></p>
+                      <p><span>新手专区</span><span class="mr20"></span><span>消费警示</span><span class="mr20"></span><span>交易安全</span></p>
+                      <p class="mt5"></p>
+                      <p><span>24小时在线服务</span><span class="mr20"></span><span>免费开店</span></p>
+                    </div>
+                    <div>
+                      <h3>付款方式</h3>
+                      <p class="mt5"></p>
+                      <p><span>快捷支付</span><span class="mr20"></span><span>信用卡</span><span>余额宝</span><span class="mr20"></span><span>蜜蜂花啊</span></p>
+                      <p class="mt5"></p>
+                      <p><span>货到付款</span></p>
+                    </div>
+                    <div>
+                      <h3>幕淘特色</h3>
+                      <p class="mt5"></p>
+                      <p><span>手机幕淘</span><span class="mr10"></span><span>幕淘信</span><span class="mr5"></span><span>大众品省</span><span class="mr5"></span><span>B格指南</span></p>
+                    </div>
+
+           </div>
+
+         
+          
+		
+  </div>
+
+           
+          <div class="clear"></div>
+          <footer>
+            <p><span><a href="">关于幕宝</a></span><span class="mr20"></span><span><a href="">合作伙伴</a></span><span class="mr20"></span><span><a href="">营销中心</a></span><span class="mr20"></span><span><a href="">廉政举报</a></span><span class="mr20"></span><span><a href="">开放平台</a></span><span class="mr20"></span><span><a href="">人才招聘</a></span><span class="mr20"></span><span><a href="">联系我们</a></span><span class="mr20"></span><span><a href="">网站地图</a></span><span class="mr20"></span><span><a href="">法律声明</a></span><span class="mr20"></span><span><a href="">知识产权</a></span></p>
+            <p class="mt5"></p>
+            <p>© 2003-现在 All Right Reserved 版权所有</p>
+          </footer>
+          
+          
+    <!----------------------弹出层------------------------>
+     <div class="pop">
+             <div class="pop-close-btn">×</div>
+             <div class="pop-1">
+               <span class="ml30"></span><span  id="popLoginBtn">登录</span><span class="ml30"></span><span id="popRegiBtn">注册</span>
+             </div>
+             <div class="pop-1-2"></div>
+             <div class="pop-1-3">
+              <!--此处添加内容-->
+             </div>
+             <div class="pop-1-4">
+              <div><img src="素材/icon/weixin.png"></div>
+              <div></div>
+              <div><img src="素材/icon/QQ.png"></div>
+              <div></div>
+              <div><img src="素材/icon/xinlang.png"></div>
+            </div>
+        </div>
+
+          <div id="login-content" style=" display: none">
+               <div id="pop-login" >  <!--pop-login-->
+                 <input type="text" name="username" class="input"  placeholder="请输入登录邮箱/手机号" style="width: 337px; height:60px;" onblur="verifyUserLogin(value,$('#login-alert'))">
+                 <div class="alert" style="color: red" id="login-alert"></div>
+                 <input type="password" name="password" class="input"  placeholder="6-16位密码,区分大小写,不能使用空格"  style="width: 337px; height:60px" onblur="verifyPwd(value,$('#pwd-alert'))">
+                 <div class="alert" style="color: red" id="pwd-alert"></div>
+                 <div class="checkbox"><div><input type="checkbox" name="check" id="check" class="input">下次自动登录</div><div><a href="">忘记密码</a></div></div>
+                  <input type="submit" name="submit" class="submit"  value="登&nbsp录" style="width: 338px; height:60px; font-size:1.5em; background-color: red; color:white; font-weight:bold">
+               </div>  <!--pop-login-->
+    </div>
+
+    <div id="regi-content" style=" display: none">
+               <div id="pop-regi" >  <!--pop-regi-->
+                 <input type="text" name="username" class="input" id="username-login"  placeholder="请输入登录邮箱/手机号"  style="width: 337px; height:60px;"   onblur="verifyUserLogin(value,$('#login-alert'))" >
+                 <div class="alert" style="color: red" id="login-alert"></div>
+                 <input type="password" name="password" class="input"  placeholder="请输入验证码"  style="width: 230px; height:60px"; onblur="Code(value,$('#code-alert') )">
+                 <img src="素材/verify.png" align="middle" style="width:73px; height:43px">
+                 <div class="alert" style="color: red" id="code-alert"></div>
+                  <input type="submit" name="submit " class="submit"  value="注&nbsp册" style="width: 338px; height:60px; font-size:1.5em; background-color: red; color:white; font-weight:bold">
+               </div>  <!--pop-login-->
+    </div>
+<!----------------------弹出层------------------------>
+ 
+
+
+
+
+
+
+
+
+    <!----------------------配件区-------------------- ---->
+
+    <!---------------------楼层坐标按钮-------------------->
+           <div class="flrNav">
+             <a href="#anchor1">F1</a>
+             <a href="#anchor2">F2</a>
+             <a href="#anchor3">F3</a>
+             <a href="#anchor4">F4</a>
+             <a href="#anchor5">F5</a>
+           </div>
+    <!---------------------楼层坐标按钮-------------------->
+
+    <!---------------------右侧服务区按钮-------------------->
+    <div class="service">
+      <a href=""><img src="素材/icon/13.png"></a>
+      <a href=""><img src="素材/icon/14.png"></a>
+      <a href=""><img src="素材/icon/15.png"></a>
+      <a href=""><img src="素材/icon/16.png"></a>
+      <a href="#returnTop"><img src="素材/icon/17.png"></a>
+    </div>
+
+    <div class="service-subLink">
+     <div>会员</div>
+     <div>购物车</div>
+     <div>收藏</div>
+     <div>消息</div>
+     <div>顶部</div>
+    </div>
+
+<!----------------------mask遮罩-------------------->
+<div class="mask"></div>
+
+ <!----------------------页脚 footer--------------------> 
+
+    <!---------------------右侧服务区按钮-------------------->
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/floordata.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+/*-----------------------------------------------------登录框--------------------------------------------------------------*/
+#app{
+	position: fixed;
+	top: 80px;
+	left: 0;
+	z-index: 30;
+	margin-left: 50%;
+	left: -112px;
+	display: none;	
+} 
+
+
+
+.boxx{
+	margin: 0 auto;
+	position: relative;
+	width: 320px;
+	
+	display: flex;
+	justify-content :center;
+	flex-wrap:wrap;
+	background-color:white;
+		
+}
+/*---------------------- 关闭按钮 X--------------------------*/
+.boxx .close{
+	width: 30px;
+	height:30px;
+	position: absolute;
+	top: 0;
+	right:0;
+	
+	font-size: 44px;
+	line-height: 30px;
+	text-align: center;
+}
+/*---------------------- banner Logo--------------------------*/
+.boxx .bannerLogo img{
+             width: 100px;
+             height: 100px;
+             display: block;
+             border-radius: 50%;
+             box-shadow: 6px 6px 10px rgba(0,0,0,.2);  
+}
+.boxx .bannerLogo{ 
+	                        
+	         width:100px;
+             height: 100px;
+			 margin-top: 50px;			
+}
+
+/*---------------------- caption 输入框标题--------------------------*/
+.boxx .caption{
+	width: 281.6px;
+	height: 40px;
+	margin-top: 20px;
+	display: flex;
+	border-bottom: 1px solid lightgray;
+	
+}
+.boxx .caption div{
+	flex:1;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 17px;
+	cursor: pointer;
+}
+.boxx .caption .focus{
+            border-bottom: 1.5px solid black;
+            font-size: 1.5px;
+            color: black;
+            font-weight: bold;
+			font-size: 23px;
+}
+.boxx .account{
+	width: 281.6px;
+	margin-top: 7.5px;
+	position: relative;
+}
+.boxx .account form{
+	width: 100%;
+	display: flex;
+	flex-wrap:wrap;	
+}
+.boxx .account form .item{
+	width: 100%;
+	height: 50px;
+             border: 0;
+             display: flex;
+             border-bottom: 1px solid lightgray;
+             padding-left: 12.5px;
+	
+}
+.boxx .account form .item i{ display: block; line-height: 45px; padding: 0; font-size: 15px}
+.boxx .account form input{
+	width: 80%;
+	height: 40px;
+	border: 0;
+	padding-left: 25px;
+	display: block;
+	line-height: 50px;	
+}
+.boxx .account #EnterAgain{                     /* ---------"Register"  时才显示的内容 -------*/
+            display:none;
+}
+input::-webkit-input-placeholder{
+	color: lightgray;
+	padding-left:10px;
+}
+.boxx .account .select{                             /* ---------"Login"  时才显示的内容 -------*/
+	width: 100%;
+	font-size: 8.5px;
+	
+}
+.boxx .account .select div:nth-child(1){
+	float: left;
+}
+.boxx .account .select div:nth-child(2) a{
+	float: right;
+	color: rgb(0,162,232);
+}
+.boxx .account .login{                              /* ---------"Register"  时 margin-top改变 原0.6  变成 0.26  ---                                                                       value="Login In"     变成    value="Register"               */
+	width: 100%;
+	height: 40px;	
+	margin-top: 30px;
+	border-radius: 3%;
+	font-size: 
+
+}
+.boxx .account .confirm{                          /*-----------"Register" 时 才出现-----------*/
+             width: 100%;
+             height: 115px;
+             margin-top: 12.5px;
+             display: flex;
+             display: none;
+
+}
+.boxx .account .confirm div:nth-child(1){
+             flex:1;
+             
+}
+.boxx .account .confirm div:nth-child(2){
+	flex:12;
+	font-size: 9px;
+	margin-left: 7.5px;
+	margin-top:15px;
+}
+.boxx .account .confirm div:nth-child(2) a{
+            color: rgb(0,162,232);
+            margin: 0 2.5px;
+}
+.boxx .account .confirm .circle{
+             width:  10px;
+             height: 10px;
+}
+.boxx .account .confirm .circle input{
+	display: block;
+	width: 20px;
+             height: 20px;
+             border-radius: 50%;
+}
+.boxx .account .login input{
+	display: block;
+	width:281.6px;
+	height: 40px;
+	background-color: rgb(0,162,232);
+	border: 0;
+	border-radius: 3%;
+	color: white;
+	font-size: 17.5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.boxx .account .login input:hover{
+	background-color:rgb(0,118,168);
+}
+.boxx .account .otherLogin{            /* ---------"Login"  时才显示的内容 -------*/
+	width: 100%;	             
+	margin-top: 20px;  
+	margin-top:25px;
+}
+
+.boxx .account .otherLogin .caption{
+	width: 100%;
+	height: 25px;
+	line-height: 5px;
+	border: 0;	
+	font-size:12px;
+}
+.boxx .account .otherLogin .caption div{
+	
+}
+.boxx .account .otherLogin .item{
+             display: flex;
+             justify-content:space-around;
+             align-items:center;
+             margin-bottom: 12.5px;
+}
+.boxx .account .otherLogin .add{
+	display: none;
+}
+.boxx .account .otherLogin .item div{
+	width: 32.5px; height: 32.5px;
+	border-radius: 50%;
+}
+.boxx .account .otherLogin .item div img{
+            display: block;
+            width: 32.5px; height: 32.5px;
+}
+.boxx .account .otherLogin .item div:nth-child(4){
+	
+	border-radius: 10%;
+}
+.boxx .account .otherLogin .item div:nth-child(4) img{
+	
+	background-color: white;
+	border: 1px solid lightgray;
+	display: block;
+	border-radius: 10%;
+}
+/*------------------------------------------------------登录框------------------------------------------------------------*/

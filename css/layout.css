@@ -1,0 +1,95 @@
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+
+.wrap{                          /* 通用样式*/
+       width: 1000px;
+       margin: 0 auto;
+       position: relative;
+}
+.clearfix:after{
+	content: ' ';
+	display: block;
+	height: 0px;
+           line-height: 0px;
+           clear: both;
+           zoom:1;
+}
+
+.top{
+height: 30px;
+background-color: lightblue;
+}
+
+.header{
+height: 92px;
+position: relative;
+}
+
+.nav{
+height: 36px;
+background-color: rgb(0,162,232);
+}
+
+.banner{
+  width: 802px; 
+  margin: 0 auto;
+  height: 414px;
+  padding: 9px 0 0 198px;
+  background-color: lightgray;
+}
+
+.banner-slider{
+float: left;
+width: 544px;
+height: 414px;
+background-color: lightblue;
+}
+
+.banner-slider img{width: 544px; height: 414px }
+
+.banner-search{
+	float: right;
+	width: 250px;
+	height: 255px; 
+	
+}
+
+.banner-help{
+	float: right;
+	width: 250px;
+	height: 146px; 
+	margin-top: 12px;
+}
+
+
+.content{
+padding: 10px 0 38px 0; 
+}
+.content-tab{
+   float: left;
+   width: 742px;
+   height: 490px;
+   background-color: #eee;
+}
+.content-news,
+.content-close{
+	float: right;
+	width: 248px;
+	height: 236px;
+	border: 1px solid lightgray;	
+}
+.content-close{
+	margin-top: 12px;
+	
+}
+.footer{
+height: 40px;
+background-color: rgb(240,240,240);
+text-align: center;
+line-height: 40px;
+color: gray;
+
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.3, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/ui.css">
+	<link rel="stylesheet" type="text/css" href="./font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/Pc-signIn.css">
+	<script type="text/javascript" src="js/menu-detail.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/cascade-data.js"></script>
+</head>
+<body>
+	<div class="mask"></div>
+	
+	<div id="top" class="top">
+			<div class="wrap">
+				<ul  class="call">
+				</ul>
+				<p class="welcome"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" class="login">Login</a>&nbsp;&nbsp;&nbsp;</p>
+	
+			</div>
+	</div>
+
+	<div id="header" class="header">
+		<div class="wrap">
+			<a href="#" class="logo"><img src="img/logo.png"></a>
+			<div class="search ui-search">
+				<div class="ui-search-selected">Select</div>
+				<div class="ui-search-select-list">
+					<a href="#">SelectA</a>
+					<a href="#">SelectB</a>
+					<a href="#">SelectC</a>
+				</div>
+				<input type="text" name="search-content" class="ui-search-input" placeholder="Enter search content">
+				<a href="#" class="ui-search-submit"&nbs>&nbsp;</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="nav" class="nav">
+		<div class="wrap">
+			<div class="link menu">Home
+				<div class="menu-list ui-menu-list">
+					<div class="menu-list-item ui-menu-list-item">
+						<span class="menu-list-item-title"></span><span  class="menu-list-item-zone">zone-A</span><span  class="menu-list-item-zone"> zone-B</span>
+					</div>
+					
+
+					<div class="menu-list-item ui-menu-list-item">
+						<span class="menu-list-item-title"></span><span  class="menu-list-item-zone">zone-C</span><span  class="menu-list-item-zone"> zone-D</span>
+					</div>
+					
+
+					<div class="menu-list-item ui-menu-list-item">
+						<span class="menu-list-item-title"></span><span  class="menu-list-item-zone">zone-E</span><span  class="menu-list-item-zone"> zone-F</span>
+					</div>
+					<div class="menu-detail ui-menu-detail" >
+						<div class="menu-detail-frame">
+							<div class="menu-detail-group">
+								<div class="menu-detail-group-caption">Zone-A</div>
+								<a href="#">Location A01</a><a href="#">Location A02</a><a href="#">Location A03</a><a href="#">Location A04</a><a href="#">Location A05</a><a href="#">Location A06</a><a href="#">Location A07</a><a href="#">Location A08</a><a href="#">Location A09</a><br/><a href="#">Location A10</a>
+							</div>
+							<div class="menu-detail-group">
+								<div class="menu-detail-group-caption">Zone-B</div>
+								<a href="#">Location B01</a><a href="#">Location B02</a><a href="#">Location B03</a><a href="#">Location B04</a><a href="#">Location B05</a><a href="#">Location B06</a><a href="#">Location B07</a><a href="#">Location B08</a><a href="#">Location B09</a><br/><a href="#">Location B10</a>
+							</div>
+						</div><!--menu-detail-frame-->
+					</div>			
+				</div>
+				
+			</div>
+
+			
+			<a href="javascript:void(0);" onclick="window.location.href='pageOne.html'" target="_blank" class="link">Book Now</a>
+		</div>
+	</div>
+
+	<div id="banner" class="banner">
+		<div class="banner-slider ui-slider">
+                              <div class="banner-slider-wrap">
+                              	<a href="#" class="item"><img src=" img/banner_1.jpg"></a>
+                              	<a href="#" class="item"><img src=" img/banner_2.jpg"></a>
+								<a href="#" class="item"><img src=" img/banner_3.jpg"></a>
+								
+                              </div>
+
+                              <div class="ui-slider-arrow">
+                              	<a href="#" class="item left"></a>
+                              	<a href="#" class="item right"></a>
+                              </div>
+
+                              <div class="ui-slider-process">
+                              	      <a href="#" class="item item_focus"></a>
+                              	      <a href="#" class="item"></a>
+                              	      <a href="#" class="item"></a>
+                              </div>
+		</div>
+
+		<div class="banner-search">
+			<div class="caption"><span class="text">Quick Appointment</span></div>
+
+			<div class="form ui-cascading">
+				
+				<div class="line">
+					<select name="area" xxx="momo" data-search="getDistinctArea"  data-where=""><option>Distric</option></select>
+				</div>
+				<div class="line">
+					<select name="level" data-search="getLeveByArea"  data-where=""><option>Level</option>
+					</select>
+
+				</div>
+				<div class="line">
+					<select name="name"  data-search="getNameByAreaAndLevel" data-where=""><option>Name</option></select>
+				</div>
+
+				<div class="submit"><input type="button" class="button" value="Quick Search"></div>
+
+			</div><!--form ui-cascading-->
+		
+		</div>
+
+
+
+		<div class="banner-help">
+			<div class="caption"><span class="text">Help Center</span></div>
+			<div class="list">
+				<a href="#" class="link">Account Info</a>
+				<a href="#" class="link">Account Info</a>
+				<a href="#" class="link">Account Info</a>
+				<a href="#" class="link">Account Info</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="content" class="content">
+                <div class="wrap clearfix">
+		<div class="content-tab" id="content-tab">
+			<div class="caption">
+				<a href="#" class="item item_focus">CaptionA</a>
+				<a href="#" class="item">CaptionB</a>
+			</div>
+			<!-----------------------------blockA-------------------------->
+			<div class="block" id="blockA">
+				<div class="item">
+					<div class="block-caption">
+						<a href="#" class="block-caption-item block-caption-item_focus">All</a>
+						<a href="#" class="block-caption-item">Bld-A-A</a>
+						<a href="#" class="block-caption-item">Bld-A-B</a>
+						<a href="#" class="block-caption-item">Bld-A-C</a>
+						<a href="#" class="block-caption-item">Bld-A-D</a>
+					</div>
+					<div class="block-content">
+						<div class="block-list clearfix">
+							<div class="block-list-item">
+								<img src="img/building-AA.jpg" alt="item1">
+								<div class="item-name">Bld-A-A<span class="item-level">[★★★★★]</span></div>
+								<div class="item-phone">Phone:XXXXXXXXXXXXXX</div>
+								<div class="item-address">Address:XXXXXXXXXXXXXXXXX</div>
+							</div>
+							<div class="block-list-item">
+								<img src="img/building-AB.jpg" alt="item1">
+								<div class="item-name">Bld-A-B<span class="item-level">[★★★★★]</span></div>
+								<div class="item-phone">Phone:XXXXXXXXXXXXXX</div>
+								<div class="item-address">Address:XXXXXXXXXXXXXXXXX</div>
+							</div>
+							<div class="block-list-item">
+								<img src="img/building-AC.jpg" alt="item1">
+								<div class="item-name">Bld-A-C<span class="item-level">[★★★★★]</span></div>
+								<div class="item-phone">Phone:XXXXXXXXXXXXXX</div>
+								<div class="item-address">Address:XXXXXXXXXXXXXXXXX</div>
+							</div>
+							<div class="block-list-item">
+								<img src="img/building-AD.jpg" alt="item1">
+								<div class="item-name">Bld-A-D<span class="item-level">[★★★★★]</span></div>
+								<div class="item-phone">Phone:XXXXXXXXXXXXXX</div>
+								<div class="item-address">Address:XXXXXXXXXXXXXXXXX</div>
+							</div>
+						</div>
+						<div class="block-text-list clearfix">
+							<a href="#" class="item">Option Location see here<span class="level">[★★★★]</span></a>
+							<a href="#" class="item">Option Location see here<span class="level">[★★★★]</span></a>
+							<a href="#" class="item">Option Location see here<span class="level">[★★★★]</span></a>
+							<a href="#" class="item">Option Location see here<span class="level">[★★★★]</span></a>
+							<a href="#" class="item">Option Location see here<span class="level">[★★★★]</span></a>
+							<a href="#" class="item">Option Location see here<span class="level">[★★★★]</span></a>
+						</div>
+						<div class="block-more"><a href="#">More Bloks</a></div>
+					</div><!--blockA: block-content-->
+					<!-----------------------------sub-block-content里面的内容-------------------------->
+					                     <div class="sub-content" >
+					                       	<div class="sub-content-pic"><img src="img/building-AA.jpg"></div>
+					                       	<div class="map" id="map">
+					                       	<iframe src="./map/dayton.html" width="380" height="380" frameborder="0" scrolling="no"></iframe>
+					                       	</div>  
+                                                                                     <div class="detail">
+  					                       <p class="location"><span></span><a>R957+JQ dfton, Washington Township</a></p>
+					                       <p class="address"><span></span><a>Get information, directions, products, services, phone numbers, and reviews on Pxlbcovm in FnXleRUod, OH. Discover more Electronic Parts and Equipment...</a></p>                                                                                   	
+                                                                                     </div>
+					                     </div>
+					<!-----------------------------sub-block-content里面的内容-------------------------->
+				</div>
+				<div class="item"></div>
+			</div><!--blockA-->
+			<!-----------------------------blockB-------------------------->
+			<div class="block displayNone" id="blockB">
+				<div class="item">
+					<div class="block-caption">
+						<a href="#" class="block-caption-item block-caption-item_focus">All</a>
+						<a href="#" class="block-caption-item">Bld-B-A</a>
+						<a href="#" class="block-caption-item">Bld-B-B</a>
+						<a href="#" class="block-caption-item">Bld-B-C</a>
+						<a href="#" class="block-caption-item">Bld-B-D</a>
+					</div>
+					<div class="block-content">
+						<div class="block-list clearfix">
+							<div class="block-list-item">
+								<img src="img/building-BA.jpg" alt="item1">
+								<div class="item-name">Bld-B-A<span class="item-level">[★★★★]</span></div>
+								<div class="item-phone">Phone:XXXXXXXXXXXXXX</div>
+								<div class="item-address">Address:XXXXXXXXXXXXXXXXX</div>
+							</div>
+							<div class="block-list-item">
+								<img src="img/building-BB.jpg" alt="item1">
+								<div class="item-name">Bld-B-B<span class="item-level">[★★★★]</span></div>
+								<div class="item-phone">Phone:XXXXXXXXXXXXXX</div>
+								<div class="item-address">Address:XXXXXXXXXXXXXXXXX</div>
+							</div>
+							<div class="block-list-item">
+								<img src="img/building-BC.jpg" alt="item1">
+								<div class="item-name">Bld-B-C<span class="item-level">[★★★★]</span></div>
+								<div class="item-phone">Phone:XXXXXXXXXXXXXX</div>
+								<div class="item-address">Address:XXXXXXXXXXXXXXXXX</div>
+							</div>
+							<div class="block-list-item">
+								<img src="img/building-BD.jpg" alt="item1">
+								<div class="item-name">Bld-B-D<span class="item-level">[★★★★]</span></div>
+								<div class="item-phone">Phone:XXXXXXXXXXXXXX</div>
+								<div class="item-address">Address:XXXXXXXXXXXXXXXXX</div>
+							</div>
+						</div>
+						<div class="block-text-list clearfix">
+							<a href="#" class="item">Option Location see here<span class="level">[★★★★]</span></a>
+							<a href="#" class="item">Option Location see here<span class="level">[★★★★]</span></a>
+							<a href="#" class="item">Option Location see here<span class="level">[★★★★]</span></a>
+							<a href="#" class="item">Option Location see here<span class="level">[★★★★]</span></a>
+							<a href="#" class="item">Option Location see here<span class="level">[★★★★]</span></a>
+							<a href="#" class="item">Option Location see here<span class="level">[★★★★]</span></a>
+						</div>
+						<div class="block-more"><a href="#">More Bloks</a></div>
+					</div><!--blockB: block-content-->
+					<!-----------------------------sub-block-content里面的内容-------------------------->
+					                     <div class="sub-content" >
+					                       	<div class="sub-content-pic"><img src="img/building-AA.jpg"></div>
+					                       	<div class="map" id="map">
+					                       	<iframe src="./map/dayton.html" width="380" height="380" frameborder="0" scrolling="no"></iframe>
+					                       	</div>  
+                                                                                     <div class="detail">
+  					                       <p class="location"><span></span><a>R957+JQ dfton, Washington Township</a></p>
+					                       <p class="address"><span></span><a>Get information, directions, products, services, phone numbers, and reviews on Pxlbcovm in FnXleRUod, OH. Discover more Electronic Parts and Equipment...</a></p>                                                                                   	
+                                                                                     </div>
+					                     </div>
+					<!-----------------------------sub-block-content里面的内容-------------------------->
+				</div>
+				<div class="item"></div>
+			</div><!--blockB-->
+
+		</div><!--content-tab-->
+
+		<div class="content-news">
+			<div class="caption">Announcement <a href="#" class="more">|&nbsp;more</a></div>
+			<div class="list">
+				<a href="#" class="link">Subject of this link subject of this link</a>
+				<a href="#" class="link">Subject of this link subject of this link</a>
+				<a href="#" class="link">Subject of this link subject of this link</a>
+				<a href="#" class="link">Subject of this link subject of this link</a>
+				<a href="#" class="link">Subject of this link subject of this link</a>
+				<a href="#" class="link">Subject of this link subject of this link</a>
+			</div>
+		</div>
+		<div class="content-close">
+			<div class="caption">Lastest Updates <a href="#" class="more">|&nbsp;more</a></div>
+			<div class="list">
+				<a href="#" class="link">Subject of this link subject of this link</a>
+				<a href="#" class="link">Subject of this link subject of this link</a>
+				<a href="#" class="link">Subject of this link subject of this link</a>
+				<a href="#" class="link">Subject of this link subject of this link</a>
+				<a href="#" class="link">Subject of this link subject of this link</a>
+				<a href="#" class="link">Subject of this link subject of this link</a>
+			</div>
+
+		</div>             	
+                </div>
+	</div><!---id="content" class="content"-->
+
+	<div id="footer" class="footer">
+		copyright &copy present
+	</div>
+
+
+  <!---------------登录框---------------->
+
+          <div id="app">
+          	       <div class="boxx">
+				   <div class="close" ><a href="#">×</a></div>
+          	       	<div class="bannerLogo">
+          	       		<img src="./img/logo.png">
+          	       	</div>
+                          
+                           <div class="caption">
+                           	<div class="focus">Login</div>
+                           	<div>Register</div>
+                           </div>
+
+                          <div class="account">
+                          	<form>                      
+                           	  <div class="item">
+                           	  	<i class="fa fa-envelope-open fa-lg"></i><input type="text"  placeholder="Email Address">
+                           	  </div>
+                           	  <div class="item">
+                           	  	<i class="fa fa-unlock-alt fa-lg"></i><input type="password"  placeholder="&nbsp;&nbsp;Password"> 
+                           	  </div>
+                           	  <div class="item" id="EnterAgain">
+                           	  	<i class="fa fa-unlock-alt fa-lg"></i><input type="password"  placeholder="&nbsp;&nbsp;Enter Password Again"> 
+                           	  </div>                    
+                          	</form>
+
+                          	<div class="select">
+                          		<div><input type="checkbox" onclick="checkAll(this)" name="checkboxall" >&nbsp;Remember Me</div>
+                          		<div><a href="#">Forgot Password?</a></div>
+                          	</div>
+
+                                       <div class="confirm">
+                                                    <div><div class="circle"><input type="checkbox" onclick="checkAll(this)" ></div></div>
+                                                    <div>I have read and agreed to the <a href="#">Terms and Conditions</a>.I also agree for my personal information to be collected, processed and transferred in accordance with the terms of the<a href="#">Privacy Policy</a>.</div>
+                          	</div>
+
+                          	<div class="login" id="submit">
+                          		<input  type="submit" value="Login In">
+                          	</div>
+
+                           	<div class="otherLogin" id="otherLogin">
+                          		<div class="caption"><div style="border: 0.5px solid lightgray;width:0.18rem;height:0"></div>&nbsp;&nbsp;or login using&nbsp;&nbsp;<div style="border: 0.5px solid lightgray;width:0.18rem;height:0"></div></div>
+                          		<div class="item">
+                      			<div class="facebook"><a href="#"><img src="./img/facebook.png"></a></div>
+                      			<div class="google"><a href="#"><img src="./img/google.png"></a></div>
+                      			<div class="twitter"><a href="#"><img src="./img/twitter.png"></a></div>
+                      	 		<div class="more" id="more"><a href="#"><img src="./img/threeDots.png"></a></a></div>
+                          		</div>
+			             <div class="item add">
+				<div class="Instagram"><a href="#"><img src="./img/Instagram.png"></a></div>
+				<div class="wechat"><a href="#"><img src="./img/wechat.png"></a></div>
+				<div class="Skype"><a href="#"><img src="./img/Skype.png"></a></div>
+		                          <div></div>
+			              </div>
+
+
+                          	</div><!--class="otherLogin"-->
+
+
+                          </div>
+
+				  
+          	           </div>
+         
+	</div>
+
+	<script>
+	     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                             window.location.href = "indexMobile.html";
+           }
+	</script>
+  <!---------------登录框---------------->
+
+	<script type="text/javascript" src="js/cascade-data.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+	<script type="text/javascript" src="js/blockdata.js"></script>
+	<script type="text/javascript" src="js/menu-detail.js"></script>
+	<script type="text/javascript" src="js/restaurant.js"></script>
+	<script type="text/javascript" src="js/banner-search.js"></script>
+	<script type="text/javascript" src="./js/Pc-signIn.js"></script>
+	
+
+
+
+	
+
+             
+</body>
+
+</html>
+
